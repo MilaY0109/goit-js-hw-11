@@ -7,11 +7,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vanilla App Template</title>
   
-  <link rel="stylesheet" href="/vanilla-app-template/assets/index-10c40100.css">
+  <script type="module" crossorigin src="/vanilla-app-template/commonHelpers.js"></script>
+  <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/vendor-5b791d57.js">
+  <link rel="stylesheet" href="/vanilla-app-template/assets/vendor-cf6910df.css">
+  <link rel="stylesheet" href="/vanilla-app-template/assets/index-5140290d.css">
 </head>
 
 <body>
-  <h1>My Homework</h1>
+  <form class="form">
+    <input type="text" name="search" placeholder="Search image" required />
+    <button type="submit">Search</button>
+  </form>
+
+  <span class="loader"></span>
+
+  <ul class="gallery"></ul>
+
+  
 </body>
 
 </html>
