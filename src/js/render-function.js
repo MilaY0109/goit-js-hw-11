@@ -1,4 +1,7 @@
+import SimpleLightbox from 'simplelightbox';
+
 const gallery = document.querySelector('.gallery');
+const lightBox = new SimpleLightbox('.gallery-link');
 
 export function renderGallery(images) {
   const item = images.hits
@@ -30,4 +33,6 @@ export function renderGallery(images) {
     .join('');
 
   gallery.innerHTML = item;
+
+  lightBox.refresh();
 }

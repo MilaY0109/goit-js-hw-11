@@ -11,8 +11,6 @@ const gallery = document.querySelector('.gallery');
 const loader = document.querySelector('.loader');
 loader.style.display = 'none';
 
-new SimpleLightbox('.gallery-link');
-
 form.addEventListener('submit', onSubmitForm);
 
 function onSubmitForm(e) {
