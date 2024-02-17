@@ -10,7 +10,7 @@ const form = document.querySelector('.form');
 const gallery = document.querySelector('.gallery');
 const loader = document.querySelector('.loader');
 loader.style.display = 'none';
-
+const lightBox = new SimpleLightbox('.gallery-link');
 form.addEventListener('submit', onSubmitForm);
 
 function onSubmitForm(e) {
