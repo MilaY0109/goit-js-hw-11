@@ -131,7 +131,7 @@ p {
   top: 0;
   left: 0;
   box-sizing: border-box;
-  animation: animloader 2s linear infinite;
+
 }
 
 @keyframes animloader {
@@ -144,4 +144,5 @@ p {
     left: 100%;
     transform: translateX(0%);
   }
+
 }
