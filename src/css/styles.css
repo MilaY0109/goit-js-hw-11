@@ -45,21 +45,41 @@ img {
 }
 
 form {
-  text-align: center;
+
+  width: 370px;
+  height: 40px;
+  display: flex;
+  margin: 16px auto;
+  gap: 8px;
+  padding: 16px;
 }
 
 input {
+
+  border: 1px solid #808080;
+  border-radius: 4px;
   width: 272px;
   height: 40px;
-  flex-shrink: 0;
-  border-radius: 4px;
-  border: 1px solid #808080;
-  color: #808080;
-  font-family: Montserrat;
+  padding-left: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  margin-right: 8px;
+  color: #2e2f42;
+  outline: transparent;
+}
+
+input::-moz-placeholder {
+  color: #808080;
+}
+
+input:hover {
+  border: 1px solid #000;
+}
+
+input:focus {
+  border: 1px solid #4e75ff;
 }
 
 button {
@@ -134,15 +154,13 @@ p {
 
 }
 
-@keyframes animloader {
+
+@keyframes rotatec {
   0% {
-    left: 0;
-    transform: translateX(-100%);
+    transform: translate(-50%, -50%) rotate(0deg);
   }
 
   100% {
-    left: 100%;
-    transform: translateX(0%);
+    transform: translate(-50%, -50%) rotate(-360deg);
   }
-
 }
